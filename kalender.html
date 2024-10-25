@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Frederiksoddekoret</title>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("static/header.html"); 
+  $("#footer").load("static/footer.html"); 
+});
+</script> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<div id="header"></div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<!--Insert content here-->
+
+<!-- The Calender Section -->
+<div class="w3-black" id="kalender">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:80%">
+    <h2 class="w3-wide w3-center">KALENDER</h2>
+    <p class="w3-opacity w3-center"><i>Se her hvornår vi øver og holder koncerter</i></p><br>
+
+    <table class="w3-table w3-bordered">
+      <tr>
+        <th class="w3-hide-small">Dag</th>
+        <th>Dato</th>
+        <th>Aktivitet</th>
+        <th>Tid</th>
+        <th>Sted</th>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>22.10.2024</td>
+        <td>Øveaften</td>
+        <td>19:00 - 21:30</td>
+        <td>Kongensgade 111, Lokale 2, syd 1</td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>29.10.2024</td>
+        <td>Øveaften</td>
+        <td>19:00 - 21:30</td>
+        <td>Kongensgade 111, Lokale 2, syd 1</td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>05.11.2024</td>
+        <td>Øveaften</td>
+        <td>19:00 - 21:30</td>
+        <td>Kongensgade 111, Lokale 2, syd 1</td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>12.11.2024</td>
+        <td>Øveaften</td>
+        <td>19:00 - 21:30</td>
+        <td>Kongensgade 111, Lokale 2, syd 1</td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>19.11.2024</td>
+        <td>Øveaften</td>
+        <td>19:00 - 21:30</td>
+        <td>Tilgår senere</td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>26.11.2024</td>
+        <td>Øveaften</td>
+        <td>19:00 - 21:30</td>
+        <td>Kongensgade 111, Lokale 2, syd 1</td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>03.12.2024</td>
+        <td>Øveaften</td>
+        <td>19:00 - 21:30</td>
+        <td>Kongensgade 111, Lokale 2, syd 1</td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>10.12.2024</td>
+        <td>Øveaften</td>
+        <td>19:00 - 21:30</td>
+        <td>Kongensgade 111, Lokale 2, syd 1</td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Onsdag</td>
+        <td>11.12.2024</td>
+        <td>Julekoncert</td>
+        <td>Tilgår senere</td>
+        <td>Den Reformerte Kirke, Dronningensgade 87</td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>17.12.2024</td>
+        <td>Julefrokost</td>
+        <td>19:00 - ?</td>
+        <td>Kongensgade 111, Lokale 2, syd 1</td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>24.12.2024</td>
+        <td>Juleferie</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>31.12.2024</td>
+        <td>Juleferie</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="w3-hide-small">Tirsdag</td>
+        <td>07.01.2025</td>
+        <td>Øveaften</td>
+        <td>19:00 - 21:30</td>
+        <td>Kongensgade 111, Lokale 2, syd 1</td>
+      </tr>
+    </table>
+</div>
+
+<div id="footer"></div>
+
+
+
+<script>
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
