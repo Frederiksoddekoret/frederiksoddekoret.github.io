@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Frederiksoddekoret</title>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("static/header.html"); 
+  $("#footer").load("static/footer.html"); 
+});
+</script> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<div id="header"></div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="static/Images/Choir.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3></h3>
+      <p><b></b></p>   
+    </div>
+  </div>
+<!--  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div> -->
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide">FREDERIKSODDEKORET</h2>
+    <p class="w3-opacity"><i>Vi elsker musik</i></p>
+    <p class="w3-justify">Vi byder dig velkommen til Frederiksoddekoret, som blev dannet den 3. september 2024 som en spændende sammensmeltning af Lyngsoddekoret og Mandagskoret. Med 60 engagerede medlemmer synger vi i 4 stemmer, hvilket skaber en rig og harmonisk klang.
+        Hos os er der plads til alle – der er ingen optagelsesprøver, og alle med lyst til at synge er hjerteligt velkomne. Vores øveaftener finder sted hver tirsdag fra kl. 19.00 til 21.30, hvor vi sammen udforsker og udvikler vores sangfærdigheder.
+        Kom og vær en del af fællesskabet i Frederiksoddekoret, hvor musikken binder os sammen!</p>
+  </div>
+
+  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width: 800px;" id="bestyrelsen">
+    <h2>BESTYRELSEN</h2>
+  </div>
+
+  <div class="w3-container w3-center w3-content" style="max-width: 800px;">
+    <div class="w3-row-padding">
+    
+      <div class="w3-quarter">
+        <h3>Korleder</h3>
+        <img src="static/Images/dirigent.webp" class="" alt="Random Name" style="width:100%">
+        <p>Louise Sletting Hvilborg</p>
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Forperson</h3>
+        <img src="static/Images/Placeholder.jpg" class="" alt="Random Name" style="width:100%">
+        <p>Henning Sørensen</p>
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Kasserer</h3>
+        <img src="static/Images/Placeholder.jpg" class="" alt="Random Name" style="width:100%">
+        <p>Bent Ole Serup</p>
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Sekretær</h3>
+        <img src="static/Images/Placeholder.jpg" class="" alt="Random Name" style="width:100%">
+        <p>Lone Jensen</p>
+      </div>
+    </div>
+
+    <div class="w3-row-padding">
+      
+      <div class="w3-quarter">
+        <h3>Medlem</h3>
+        <img src="static/Images/Placeholder.jpg" class="" alt="Random Name" style="width:100%">
+        <p>Toni Sørensen</p>
+      </div>
+      <div class="w3-quarter">
+        <h3>Medlem</h3>
+        <img src="static/Images/Placeholder.jpg" class="" alt="Random Name" style="width:100%">
+        <p>Bettina Jensen</p>
+      </div>
+      <div class="w3-quarter">
+        <h3>Medlem</h3>
+        <img src="static/Images/Placeholder.jpg" class="" alt="Random Name" style="width:100%">
+        <p>Marianne Meyer</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="kalender">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">KALENDER</h2>
+      <p class="w3-opacity w3-center"><i>Se her hvornår vi øver og holder koncerter</i></p><br>
+
+      <table class="w3-table w3-bordered">
+        <tr>
+          <th>Dag</th>
+          <th>Dato</th>
+          <th>Aktivitet</th>
+          <th>Tid</th>
+          <th>Sted</th>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>22.10.2024</td>
+          <td>Øveaften</td>
+          <td>19:00 - 21:30</td>
+          <td>Kongensgade 111, Lokale 2, syd 1</td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>29.10.2024</td>
+          <td>Øveaften</td>
+          <td>19:00 - 21:30</td>
+          <td>Kongensgade 111, Lokale 2, syd 1</td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>05.11.2024</td>
+          <td>Øveaften</td>
+          <td>19:00 - 21:30</td>
+          <td>Kongensgade 111, Lokale 2, syd 1</td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>12.11.2024</td>
+          <td>Øveaften</td>
+          <td>19:00 - 21:30</td>
+          <td>Kongensgade 111, Lokale 2, syd 1</td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>19.11.2024</td>
+          <td>Øveaften</td>
+          <td>19:00 - 21:30</td>
+          <td>Tilgår senere</td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>26.11.2024</td>
+          <td>Øveaften</td>
+          <td>19:00 - 21:30</td>
+          <td>Kongensgade 111, Lokale 2, syd 1</td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>03.12.2024</td>
+          <td>Øveaften</td>
+          <td>19:00 - 21:30</td>
+          <td>Kongensgade 111, Lokale 2, syd 1</td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>10.12.2024</td>
+          <td>Øveaften</td>
+          <td>19:00 - 21:30</td>
+          <td>Kongensgade 111, Lokale 2, syd 1</td>
+        </tr>
+        <tr>
+          <td>Onsdag</td>
+          <td>11.12.2024</td>
+          <td>Julekoncert</td>
+          <td>Tilgår senere</td>
+          <td>Den Reformerte Kirke, Dronningensgade 87</td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>17.12.2024</td>
+          <td>Julefrokost</td>
+          <td>19:00 - ?</td>
+          <td>Kongensgade 111, Lokale 2, syd 1</td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>24.12.2024</td>
+          <td>Juleferie</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>31.12.2024</td>
+          <td>Juleferie</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tirsdag</td>
+          <td>07.01.2025</td>
+          <td>Øveaften</td>
+          <td>19:00 - 21:30</td>
+          <td>Kongensgade 111, Lokale 2, syd 1</td>
+        </tr>
+      </table>
+
+
+<!--
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="kontakt">
+    <h2 class="w3-wide w3-center">KONTAKT</h2>
+    <p class="w3-opacity w3-center"><i>Interesseret i at være med i koret? Så kontakt os</i></p>
+    
+    <div class="w3-padding-32 w3-center">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Kontaktperson: Henning Sørensen<br> 
+        <i class="fa fa-phone" style="width:30px"></i> Mobil: 29 10 26 66<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: heje105@gmail.com<br>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--     <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Navn" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" type="email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Besked" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div> -->
+<!-- End Page Content -->
+</div>
+
+<div id="footer"></div>
+
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
