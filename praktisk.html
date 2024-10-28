@@ -30,10 +30,63 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 <!--Insert content here-->
 
-<div class="w3-panel w3-center">
-  <h1>Velkommen til</h1>
-  <p> Hjemmesiden er stadig under udvikling. Indhold er på vej</p>
+<!-- Automatic Slideshow Images -->
+<div class="mySlides w3-display-container w3-center">
+  <img src="static/Images/Practical.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <h3></h3>
+    <p><b></b></p>   
+  </div>
 </div>
+<!--  <div class="mySlides w3-display-container w3-center">
+  <img src="/w3images/ny.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <h3>New York</h3>
+    <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+  </div>
+</div>
+<div class="mySlides w3-display-container w3-center">
+  <img src="/w3images/chicago.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <h3>Chicago</h3>
+    <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+  </div> -->
+</div>
+
+<div class="w3-panel w3-center">
+  <h1>Praktisk Information</h1>
+  <p>Her kan du finde svar på ofte stillede spørgsmål.</p>
+</div>
+
+<div class="w3-container">
+
+<button onclick="accordian('nyMedlem')" class="w3-btn w3-block w3-black">
+  Nyt medlem</button>
+  
+  <div id="nyMedlem" class="w3-hide w3-container w3-center w3-light-grey">
+    <p>Hvis du gerne vil være med i koret skal du blot møde op til en af vores øveaftener. Alle er velkomne. Se på vores <a href="kalender.html">kalender</a> hvor og hvornår vi øver</p>
+  </div>
+
+<button onclick="accordian('kontingent')" class="w3-btn w3-block w3-black w3-margin-top">
+    Kontingent</button>
+    
+<div id="kontingent" class="w3-hide w3-container w3-center w3-light-grey">
+  <p>Det koster 500 kr pr halvår at være med i koret. Du vil som medlem få en mail når det er tid til at betale med information om hvordan kontingentet skal betales</p>
+</div>
+
+<button onclick="accordian('parkering')" class="w3-btn w3-block w3-black w3-margin-top">
+      Parkering</button>
+      
+<div id="parkering" class="w3-hide w3-container w3-center w3-light-grey">
+  <p>Man kan parkere gratis langs Kongensgade foran skolen. Hvis der ikke er plads på Kongensgade kan man også parkere gratis ved Fredericia Sundhedshus på Dronningensgade 97 som er fem minutters gang fra skolen.</p>
+</div>
+
+</div>
+
+
+
+
+
 
 </div>
 
@@ -43,17 +96,31 @@ body {font-family: "Lato", sans-serif}
 
 <script>
 
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+//show and hide content in accordians
+function accordian(id) {
+  var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else { 
     x.className = x.className.replace(" w3-show", "");
   }
 }
-
 </script>
 
 </body>
