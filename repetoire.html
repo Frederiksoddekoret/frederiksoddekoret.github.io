@@ -18,6 +18,8 @@ $(function(){
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="static/styles/font.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -29,10 +31,61 @@ body {font-family: "Lato", sans-serif}
 
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 <!--Insert content here-->
-<div class="w3-panel w3-center">
-  <h1>Velkommen til</h1>
-  <p> Hjemmesiden er stadig under udvikling. Indhold er på vej</p>
+
+ <!-- Automatic Slideshow Images -->
+ <div class="mySlides w3-display-container w3-center">
+  <img src="static/Images/MusicalSheet.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <h3></h3>
+    <p><b></b></p>   
+  </div>
 </div>
+<!--  <div class="mySlides w3-display-container w3-center">
+  <img src="/w3images/ny.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <h3>New York</h3>
+    <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+  </div>
+</div>
+<div class="mySlides w3-display-container w3-center">
+  <img src="/w3images/chicago.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <h3>Chicago</h3>
+    <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+  </div> -->
+</div>
+
+
+<div class="w3-panel w3-center">
+  <h1>Repetoire</h1>
+  <p> Her kan du se og downloade de sange vi synger i Frederiksoddekoret</p>
+</div>
+
+<hr>
+
+<div class="w3-center" id="songs"></div>
+
+<script>
+
+let data = ["Barn Jesus i en krybbe lå", "Dejlig er jorden", "Glade jul", "Hver gang det blir vinter", "In the bleak midwinter", "Lad det klinge", "O come all ye faithfull"];
+let songsDiv = document.getElementById("songs");
+for (i = 0; i < data.length; ++i) {
+  let div = document.createElement('div');
+  songsDiv.appendChild(div);
+  let p = document.createElement('p');
+  p.innerText = data[i];
+  p.classList.add("w3-tangerine", "w3-margin-bottom");
+  div.appendChild(p);
+  let a = document.createElement('a');
+  a.innerText = "Download";
+  a.href = "static/Songs/" + data[i] + ".pdf";
+  div.appendChild(a);
+  let hr = document.createElement("hr");
+  div.appendChild(hr)
+  
+}
+</script>
+
 
 </div>
 
@@ -42,6 +95,21 @@ body {font-family: "Lato", sans-serif}
 
 <script>
 
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
@@ -52,6 +120,8 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+
 
 </script>
 
